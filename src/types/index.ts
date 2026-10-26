@@ -7,7 +7,7 @@ export interface Task {
   title: string;
   description: string;
   status: TaskStatus;
-  priority: 'low' | 'medium' | 'high';
+  priority: TaskPriority;
   dueDate: string;
 }
  
@@ -28,6 +28,6 @@ export interface TaskItemProps {
 export interface TaskFilterProps {
   onFilterChange: (filters: {
     status?: TaskStatus;
-    priority?: 'low' | 'medium' | 'high';
+    priority?: TaskPriority;
   }) => void;
 }
