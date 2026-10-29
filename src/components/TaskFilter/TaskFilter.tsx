@@ -30,7 +30,8 @@ function TaskFilter({ onFilterChange }: TaskFilterProps) {
         <select
           className="task-filter__select"
           value={status}
-          onChange={handleStatusChange}>
+          onChange={handleStatusChange}
+          >
           <option value="">All Statuses</option>
           <option value="pending">Pending</option>
           <option value="in-progress">In Progress</option>
